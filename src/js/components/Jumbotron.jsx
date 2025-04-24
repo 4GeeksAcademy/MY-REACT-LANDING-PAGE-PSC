@@ -1,15 +1,24 @@
 import React from "react";
+import PropType from "prop-types";
 
-const Jumbotron = () => {
+const Jumbotron = (props) => {
     return (
-        <div className="p-5 mb-4 bg-light rounded-3">
-        <div className="container-fluid py-5">
-          <h1 className="display-5 fw-bold">Custom jumbotron</h1>
-          <p className="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-          <button className="btn btn-primary btn-lg" type="button">Example button</button>
+        <div id="background" className="p-5 mb-4 bg-light rounded-3">
+        <div id="contStyle" className="container-fluid py-5">
+          <h1 id="headerText"className="display-5 fw-bold">{props.primaryText}</h1>
+          <p id="parText" className="col-md-8 fs-4">{props.secondaryText}</p>
+          <button id="buttonJumbo" src={props.buttonUrl} onClick={props.buttonUrl} className="btn btn-primary btn-lg" type="button">{props.buttonLabel}</button>
         </div>
       </div>
     )
+};
+
+Jumbotron.propTypes = {
+  primaryText: PropType.string,
+  secondaryText: PropType.string,
+  buttonUrl: PropType.string,
+  buttonLabel: PropType.string,
+  
 };
 
 export default Jumbotron

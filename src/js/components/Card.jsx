@@ -1,14 +1,15 @@
 import React from "react";
+import PropType from "prop-types"
 
-const card = () => {
+const Card = (props) => {
     return (
         <>
-        <div className="card">
-            <img src={imageSource} className="card-img-top" alt="..." />
-            <div className="card-body">
+        <div id="cardContent" className="card">
+            <img id="cardImage" src={props.imageSource} className="card-img-top" alt="..." />
+            <div id="cardInside" className="card-body">
                 <h5 className="card-title">{props.cardTitle}</h5>
                 <p className="card-text">{props.cardText}</p>
-                <a href={props.buttonUrl} className="btn btn-primary">{props.buttonLabel}</a>
+                <a href={props.buttonUrl} className="btn btn-primary cardButton">{props.buttonLabel}</a>
             </div>
         </div>
         </>
@@ -17,24 +18,16 @@ const card = () => {
 };
 
 
-card.propTypes = {
-	cardTitle: PropType.string,
-	cardText: PropType.string,
+Card.propTypes = {
+	CardTitle: PropType.string,
+	CardText: PropType.string,
 	buttonUrl: PropType.string,
 	buttonLabel: PropType.string,
     imageSource: PropType.string,
 
 };
 
-ReactDOM.render(
-    <Card
-      cardTitle="Welcome to react"
-      cardText="React is the most popular rendering library in the world"
-      buttonUrl="https://reactjs.org/"
-      buttonLabel="Go to the official website"
-      imageSource= "https://media.deloitte.com/is/image/deloitte/Deloitte-ES-Tecnolog%C3%ADa-React-Native-4x1:Mobile?$Responsive$&fmt=webp&fit=stretch,1&dpr=on,2.625"
-    />, document.querySelector('#Card')
-  );
+
 
 
 export default Card

@@ -7,7 +7,12 @@ import Footer from "./Footer";
 const Home = () => {
 	return (
 		<>
-			<Navbar />
+			<Navbar 
+				navTittle= "MY LADING PAGE"
+				navHome ="Home"
+				navFeatures= "Novedades"
+				navPricing= "Actualizaciones"
+				/>
 		
 			<Container />
 

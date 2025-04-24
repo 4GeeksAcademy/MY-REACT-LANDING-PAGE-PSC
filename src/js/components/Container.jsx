@@ -11,7 +11,7 @@ const Container = () => {
                 <div className="col-12">
                     <Jumbotron
                         primaryText="PROYECTO LANDING PAGE CON REACT"
-                        secondaryText="Lo que realmente queremos lograr con este ejercicio es que aprendas a decidir qué componentes vas a crear, ¿Qué crees que deba ser un componente? ¿Qué se va a reutilizar? ¿Cómo puedes hacer que tu código quede realmente ordenado y prevenir futuros errores? Lo más seguro es que tienes que dividir tu código en componentes: <Jumbotron />, <Navbar />, <Card />."
+                        secondaryText="Una landing page, o página de aterrizaje, es una página web diseñada para un propósito específico, generalmente la conversión de visitantes en leads o clientes. Se diferencia de una página web tradicional en que se enfoca en una única llamada a la acción y minimiza las distracciones para aumentar las tasas de conversión. "
                         buttonUrl="https://es.react.dev/"
                         buttonLabel="Conoce React"
                     />

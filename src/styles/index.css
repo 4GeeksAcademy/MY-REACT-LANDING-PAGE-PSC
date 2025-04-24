@@ -9,7 +9,7 @@ body {
     margin-top: 30px;
     padding-bottom: 10% !important;
     background-image: url("https://miro.medium.com/v2/resize:fit:1092/0*nifY9Fy8LFlDQ93W.png");
-    background-size: cover;
+    background-size: 1820px;
 }
 
 #contStyle {
@@ -49,14 +49,18 @@ body {
 }
 
 
-#buttonJumbo {
-    background-color: blueviolet;
+#buttonJumbo:hover {
     transition: 3.s linear;
-    background-color: rgb(157, 36, 243);
     box-shadow: 0 0 5px rgb(117, 225, 244), 0 0 5px aliceblue, 0 0 5px, 0 0 5px rgb(10, 10, 10), 0 0 5px aliceblue;
-
     margin-top: 20px;
     border: none;
+}
+
+#buttonJumbo {
+    border: none;
+    background-color: blueviolet;
+    background-color: rgb(157, 36, 243);
+    margin-top: 20px;
 }
 
 #cardContent {
@@ -80,8 +84,25 @@ body {
 
 
 .cardButton {
-    color: rgb(255, 196, 0);
-    margin-block-end: auto;
-    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(38, 26, 26, 1) 96%, rgba(38, 13, 13, 1) 100%);
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 2px 1px rgb(0, 0, 0);
+    width: 300px;
+    border: none;
+    background-image: url("https://i.pinimg.com/736x/38/c9/b3/38c9b3c7c696a32802e69b67aa359055.jpg");
+    background-size: cover;
+    border-radius: 1px 1px 40px 40px;
 
+}
+
+.cardButton:hover {
+    transition: 8.s linear;
+    box-shadow: 0 0 5px rgb(117, 225, 244), 0 0 5px aliceblue, 0 0 5px, 0 0 5px rgb(10, 10, 10), 0 0 5px aliceblue;
+
+}
+
+.footerText {
+    color: white !important;
+    font-size: 20px;
 }

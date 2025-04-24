@@ -16,7 +16,9 @@ const Home = () => {
 		
 			<Container />
 
-			<Footer />
+			<Footer 
+			footerText= "Todos los derechos y los izquierdos liberados - Proyecto 2025 - Alumno 4Geeks - PSC"
+			/>
 		</>
 
 
